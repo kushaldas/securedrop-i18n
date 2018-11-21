@@ -10,7 +10,7 @@ TOPLEVEL=$(git rev-parse --show-toplevel)
 source "${BASH_SOURCE%/*}/../../devops/scripts/ticker"
 
 function docker_image() {
-    docker build \
+    sudo docker build \
            ${DOCKER_BUILD_ARGUMENTS:-} \
 	   --build-arg=USER_ID="$(id -u)" \
 	   --build-arg=USER_NAME="${USER:-root}" \
@@ -19,7 +19,7 @@ function docker_image() {
 
 function docker_run() {
     find . \( -name '*.pyc' -o -name __pycache__ \) -delete
-    docker run \
+    sudo docker run \
 	   --rm \
 	   --user "${USER:-root}" \
 	   --volume "${TOPLEVEL}:${TOPLEVEL}" \
