@@ -299,7 +299,7 @@ msgid "Change Secret"
 msgstr "Keisti paslaptį"
 
 #: journalist_templates/account_edit_hotp_secret.html:7
-#: journalist_templates/admin_add_user.html:33
+#: journalist_templates/admin_add_user.html:40
 #: journalist_templates/admin_edit_hotp_secret.html:8
 #, fuzzy
 msgid "HOTP Secret"
@@ -404,7 +404,7 @@ msgid "Admin Interface"
 msgstr "Administratoriaus aplika"
 
 #: journalist_templates/admin.html:6
-#: journalist_templates/admin_add_user.html:39
+#: journalist_templates/admin_add_user.html:46
 #, fuzzy
 msgid "ADD USER"
 msgstr "PRIDĖTI VARTOTOJĄ"
@@ -469,18 +469,26 @@ msgstr "INSTANCIJOS KONFIGŪRAVIMAS"
 msgid "Back to admin interface"
 msgstr "Grįžti į administratoriaus aplinką"
 
-#: journalist_templates/admin_add_user.html:21
+#: journalist_templates/admin_add_user.html:23
+msgid "Username can contain spaces"
+msgstr ""
+
+#: journalist_templates/admin_add_user.html:24
+msgid "Username is case-sensitive"
+msgstr ""
+
+#: journalist_templates/admin_add_user.html:28
 #, fuzzy
 msgid "The user's password will be:"
 msgstr "Vartotojo slaptažodis bus:"
 
-#: journalist_templates/admin_add_user.html:24
+#: journalist_templates/admin_add_user.html:31
 #: journalist_templates/edit_account.html:17
 #, fuzzy
 msgid "Is Administrator"
 msgstr "Ar administratorius"
 
-#: journalist_templates/admin_add_user.html:32
+#: journalist_templates/admin_add_user.html:39
 #, fuzzy
 msgid "Is using a YubiKey [HOTP]"
 msgstr "Ar naudoja YubiKey [HOTP]"
@@ -1018,17 +1026,17 @@ msgstr "Ačiū! Dokumentas pateiktas sėkmingai."
 msgid "Thanks! We received your message and document."
 msgstr "Ačiū! Tavo žinutė ir dokumentai pateikti sėkmingai."
 
-#: source_app/main.py:222
+#: source_app/main.py:223
 #, fuzzy
 msgid "Reply deleted"
 msgstr "Atsakymas ištrintas"
 
-#: source_app/main.py:240
+#: source_app/main.py:241
 #, fuzzy
 msgid "All replies have been deleted"
 msgstr "Visi atsakymai ištrinti"
 
-#: source_app/main.py:254
+#: source_app/main.py:255
 #, fuzzy
 msgid "Sorry, that is not a recognized codename."
 msgstr "Atsiprašome, šis slapyvardis neatpažintas."
@@ -1038,8 +1046,8 @@ msgstr "Atsiprašome, šis slapyvardis neatpažintas."
 msgid "Protecting Journalists and Sources"
 msgstr "Saugome žurnalistus ir jų šaltinius"
 
-#: source_templates/base.html:25 source_templates/base.html:47
-#: source_templates/index.html:33 source_templates/index.html:88
+#: source_templates/base.html:25 source_templates/base.html:45
+#: source_templates/index.html:33 source_templates/index.html:85
 #, fuzzy
 msgid "Powered by"
 msgstr "Sistema paremta"
@@ -1049,7 +1057,7 @@ msgstr "Sistema paremta"
 msgid "LOG OUT"
 msgstr "ATSIJUNGTI"
 
-#: source_templates/base.html:47 source_templates/index.html:88
+#: source_templates/base.html:45 source_templates/index.html:85
 msgid ""
 "Like all software, SecureDrop may contain security bugs. Use at your own "
 "risk."
@@ -1198,7 +1206,7 @@ msgstr ""
 msgid "CHECK FOR A RESPONSE"
 msgstr "TIKRINTI AR YRA ATSAKYMŲ"
 
-#: source_templates/index.html:96
+#: source_templates/index.html:93
 #, fuzzy
 msgid ""
 "You appear to be using the Tor Browser. You can move the Security Slider to "
@@ -1207,7 +1215,7 @@ msgstr ""
 "Atrodo, kad naudojate Tor naršyklę. Galite pakeisti Apsaugos Skydo lygį "
 "keturiais žingsniais."
 
-#: source_templates/index.html:98
+#: source_templates/index.html:95
 #, fuzzy
 msgid ""
 "Click the <img src=\"{icon}\" alt=\"Tor icon\"> Tor icon in the toolbar above"
@@ -1215,12 +1223,12 @@ msgstr ""
 "Paspauskite ant<img src=\"{icon}\" alt=\"Tor icon\"> Tor piktogramos įrankių "
 "juostoje viršuje"
 
-#: source_templates/index.html:99
+#: source_templates/index.html:96
 #, fuzzy
 msgid "Click <strong>Security Settings...</strong>"
 msgstr "Paspauskite<strong>Apsaugos nustatymai...</strong>"
 
-#: source_templates/index.html:100
+#: source_templates/index.html:97
 #, fuzzy
 msgid ""
 "Move the Slider to <strong>Safest</strong>, then click <strong>OK</strong>"
@@ -1228,7 +1236,7 @@ msgstr ""
 "Pakeiskite lygį į <strong>Saugiausią</strong>, tada spauskite <strong>GERAI</"
 "strong>"
 
-#: source_templates/index.html:101
+#: source_templates/index.html:98
 #, fuzzy
 msgid "<a href=\"/\">Click here</a> to refresh the page"
 msgstr "<a href=\"/\">Spauskite čia</a> puslapiui atnaujinti"
@@ -1405,11 +1413,6 @@ msgstr "Puslapis nerastas"
 #, fuzzy
 msgid "Sorry, we couldn't locate what you requested."
 msgstr "Atsiprašome, neradome, ko ieškote."
-
-#: source_templates/screensaver.html:2
-msgid "Interface hidden. Move your cursor here to show."
-msgstr ""
-"Vartotojo sąsaja laikinai paslėpta. Jei norite tęsti darbą, pajudinkite pelę."
 
 #: source_templates/session_timeout.html:6
 #, fuzzy
@@ -1607,3 +1610,8 @@ msgstr ""
 #, fuzzy
 msgid "Back to submission page"
 msgstr "Grįžti į paraiškos puslapį"
+
+#~ msgid "Interface hidden. Move your cursor here to show."
+#~ msgstr ""
+#~ "Vartotojo sąsaja laikinai paslėpta. Jei norite tęsti darbą, pajudinkite "
+#~ "pelę."
